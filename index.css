@@ -1,4 +1,17 @@
+html {
+ color: #00BBD1;
+}
+
 .world {
 background-color: #BA55D3;
 text-align: center;
 }
+
+h2 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
