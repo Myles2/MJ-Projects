@@ -1,37 +1,56 @@
-html, body {
-  width: 100vw;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
+.world {
+  display: grid;
+  grid-template-columns: 60% 20% 20%;
+  text-align: center;
+  font-size: 50px;
+  background: linear-gradient(#0099ff, #66ffff);
+}
+
+.email {
+  grid-column: 2 / 3;
+  font-size: 30px;
 }
 
 body {
+  background: linear-gradient(#66ffff, #66c2ff, #ffcccc);
+/*  background: linear-gradient(#0059b3, #ff1a1a);*/
+}
+
+#main-content {
   display: grid;
-  grid-template-rows: 150px auto 100px;
-  grid-template-columns: minmax(100px, 2fr) 9fr;
-  background: linear-gradient(#0059b3, #ff1a1a);
+  grid-template-columns: 20% 75% 5%;
+  grid-template-rows: repeat(8, 1fr);
+  grid-row-gap: 60px;
 }
 
-header {
-  grid-column: 1 / 3;
-  background: linear-gradient(#0099ff, #000066);;
-  border: 10px solid black;
+.page {
+  grid-column: 2 / 3;
+  grid-row: 1 / 6;
+  display: grid;
+  grid-gap: 40px;
+  margin-top: 35px;
 }
 
-nav{
-  grid-column: 1fr;
-  grid-row: 2 / span 6;
-  background: linear-gradient(#000066, #ff3333);
+.projects {
+
+}
+
+nav {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+nav h2 {
+  padding: 30px 5px 30px 5px;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
 }
 
 footer {
-  grid-column: 1 / 3;
-  background: linear-gradient(#ff3333, #003366);
-}
-
-.world {
-  text-align: center;
-  font-size: 60px;
+  background: red;
 }
 
 h2 {
@@ -42,9 +61,4 @@ h2 {
 p {
   text-align: center;
   font-family: Helvetica;
-}
-
-nav h2 {
-  color: white;
-  padding: 30px 5px 30px 5px;
 }
