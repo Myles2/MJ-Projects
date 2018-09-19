@@ -19,7 +19,7 @@ body {
 #main-content {
   display: grid;
   grid-template-columns: 20% 75% 5%;
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   grid-row-gap: 60px;
 }
 
@@ -31,10 +31,6 @@ body {
   margin-top: 35px;
 }
 
-.projects {
-
-}
-
 nav {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
@@ -44,13 +40,29 @@ nav h2 {
   padding: 30px 5px 30px 5px;
 }
 
-a:link {
+nav a:link {
   text-decoration: none;
   color: black;
 }
 
+nav a:hover {
+  color: white;
+}
+
+nav a:visited {
+  color: black;
+}
+
+nav a:visited:hover {
+  color: white;
+}
+
 footer {
-  background: red;
+  background: #1aa3ff;
+}
+
+.page h2 {
+  font-size: 40px;
 }
 
 h2 {
@@ -61,4 +73,15 @@ h2 {
 p {
   text-align: center;
   font-family: Helvetica;
+  font-size: 25px;
+}
+
+.prolang i {
+  text-align: center;
+  width: 100%;
+}
+
+.prolang p {
+  font-weight: bold;
+  font-size: 30px;
 }
