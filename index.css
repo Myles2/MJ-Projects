@@ -1,4 +1,3 @@
-
 .world {
   display: grid;
   grid-template-columns: 60% 40%;
@@ -102,53 +101,55 @@ p {
   visibility: hidden;
 }
 
+
+
 /* cell phone */
 
 @media only screen and (min-width: 320px) and (max-width: 766px) {
   .world {
     width: 405px;
-  }
-
-  .email {
-    font-size: 12px;
-    display: grid;
-    grid-template-rows: 50% 50%;
-    grid-row: 2 / 2;
-    font-weight: 600;
-  }
-
-  nav {
-    display: none;
-  }
-
-  .pro-list {
-    visibility: visible;
-  }
-  
-  .pro-list a:visited {
-    color: black;
-  }
-
-  .pro-list a:link {
-    text-decoration: none;
-    color: black;
-  }
-
-  .pro-list a:hover {
-    color: white;
 }
 
-  #main-content {
-    grid-column: 1 / 2;
-  }
+.email {
+  font-size: 12px;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-row: 2 / 2;
+  font-weight: 600;
+}
 
-  .page {
-    grid-column: 1 / 2;
-  }
+nav {
+  display: none;
+}
 
-  footer {
-  width: 405px;
-  }
+.pro-list {
+  visibility: visible;
+}
+
+.pro-list a:visited {
+  color: black;
+}
+
+.pro-list a:link {
+  text-decoration: none;
+  color: black;
+}
+
+.pro-list a:hover {
+  color: white;
+}
+
+#main-content {
+  grid-column: 1 / 2;
+}
+
+.page {
+  grid-column: 1 / 2;
+}
+
+footer {
+width: 405px;
+}
 }
 
 /* ipad */
