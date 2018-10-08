@@ -4,7 +4,7 @@
   grid-template-columns: 60% 40%;
   text-align: center;
   font-size: 50px;
-  background: linear-gradient(#0099ff, #66ffff);
+  background:linear-gradient(#0099ff, #06d8d8);
 }
 
 .email {
@@ -14,7 +14,7 @@
 }
 
 body {
-  background: linear-gradient(#66ffff, #66c2ff, #ff9696);
+  background: linear-gradient(#19d8d8, #66c2ff, #ff9696);
 /*  background: linear-gradient(#0059b3, #ff1a1a);*/
 }
 
@@ -79,12 +79,12 @@ img {
 
 h2 {
   text-align: center;
-  font-family: Helvetica;
+  font-family: Helvetica, sans-serif;
 }
 
 p {
   text-align: center;
-  font-family: Helvetica;
+  font-family: Helvetica, sans-serif;
   font-size: 25px;
 }
 
