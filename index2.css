@@ -33,7 +33,8 @@ body {
   
   .intro {
     top: 0;
-    background: #006e85;
+    background-image: url("C:\Users\winne\Desktop\Code Projects\Github website\MJ-Projects\.intro back.jpg");
+   /* background: #008099;*/
     min-height: 55vh;
     padding-top: 45vh;
     font-size: 30px;
@@ -81,6 +82,23 @@ body {
     
   }
   
+  #prolog {
+    min-height: 55vh;
+    padding-top: 40vh;
+    background-color: #00a0c0;
+  }
+
+  #prolog h2{
+     font-size: 50px;
+     margin-bottom: 30px;
+     padding-top: 20px;
+     padding-bottom: 20px;
+  }
+
+  #prolog h3{
+    font-size: 30px;
+  }
+
   .project {
     text-decoration: none;
     color: #000;
