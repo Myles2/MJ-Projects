@@ -33,7 +33,7 @@ body {
   
   .intro {
     top: 0;
-    background-image: url("C:\Users\winne\Desktop\Code Projects\Github website\MJ-Projects\.intro back.jpg");
+    background-image: url(https://raw.githubusercontent.com/Myles2/MJ-Projects/0f0d38ad93a7e59f124714af969e5732ab1d2749/.intro%20back.jpg);
    /* background: #008099;*/
     min-height: 55vh;
     padding-top: 45vh;
