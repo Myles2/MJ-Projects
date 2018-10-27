@@ -1,185 +1,154 @@
-.world {
-  display: grid;
-  grid-template-columns: 60% 40%;
-  text-align: center;
-  font-size: 50px;
-  background:linear-gradient(#0099ff, #06d8d8);
-}
-
-.email {
-  grid-column: 2 / 2;
-  font-size: 40px;
-  overflow: auto;
-}
-
 body {
-  background: linear-gradient(#19d8d8, #66c2ff, #ff9696);
-/*  background: linear-gradient(#0059b3, #ff1a1a);*/
-}
-
-#main-content {
-  display: grid;
-  grid-template-columns: 20% 75% 5%;
-  grid-template-rows: repeat(4, 1fr);
-  grid-row-gap: 60px;
-}
-
-.page {
-  grid-column: 2 / 3;
-  grid-row: 1 / 6;
-  display: grid;
-  grid-gap: 40px;
-  margin-top: 35px;
-}
-
-.flex-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-nav {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-}
-
-nav h2 {
-  padding: 30px 5px 30px 5px;
-}
-
-nav a:link {
-  text-decoration: none;
-  color: black;
-}
-
-nav a:hover {
-  color: white;
-}
-
-nav a:visited {
-  color: black;
-}
-
-nav a:visited:hover {
-  color: white;
-}
-
-footer {
-  background: #1aa3ff;
-}
-
-.page h2 {
-  font-size: 40px;
-}
-
-img {
-  padding: 5px;
-}
-
-#FCC {
-  height: 354px;
-}
-
-h2 {
-  text-align: center;
-  font-family: Helvetica, sans-serif;
-}
-
-p {
-  text-align: center;
-  font-family: Helvetica, sans-serif;
-  font-size: 25px;
-}
-
-.prolang i {
-  text-align: center;
-  width: 100%;
-}
-
-.prolang p {
-  font-weight: bold;
-  font-size: 30px;
-}
-
-.pro-list {
-  visibility: hidden;
-}
-
-
-
-/* cell phone */
-
-@media only screen and (min-width: 320px) and (max-width: 766px) {
-  .world {
-    width: 405px;
-}
-
-.email {
-  font-size: 12px;
-  display: grid;
-  grid-template-rows: 50% 50%;
-  grid-row: 2 / 2;
-  font-weight: 600;
-}
-
-nav {
-  display: none;
-}
-
-.pro-list {
-  visibility: visible;
-}
-
-.pro-list a:visited {
-  color: black;
-}
-
-.pro-list a:link {
-  text-decoration: none;
-  color: black;
-}
-
-.pro-list a:hover {
-  color: white;
-}
-
-#main-content {
-  grid-column: 1 / 2;
-}
-
-.page {
-  grid-column: 1 / 2;
-}
-
-footer {
-width: 405px;
-}
-}
-
-/* ipad */
-
-@media only screen and (min-width: 767px) and (max-width: 1023px) {
-
-  nav {
-    grid-column: 2 / 2;
-    display: grid;
-    grid-template-columns: 13% 22% 14% 14% 20% 17%;
+    font-family: helvetica, sans-serif;
+    text-align: center;
   }
 
-  #main-content {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
+  #navbar {
+    z-index: 1;
   }
-
-  .page {
-    grid-column: 100%;
-    grid-row: 1 / 6;
-    margin-top: 150px;
-  }
-
-  .email {
-    font-size: 22px;
+  
+  nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 25px;
     font-weight: bold;
   }
+  
+  nav ul li a:hover {
+    font-size: 40px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 40px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+  
+  nav ul {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    background-image: linear-gradient(#0099ff, #0044ee);
+  }
+  
+  nav ul:hover {
+    background-image: linear-gradient(#ff6600, #ff4400);
+  }
+  
+  .intro {
+    background-image: url(https://raw.githubusercontent.com/Myles2/MJ-Projects/0f0d38ad93a7e59f124714af969e5732ab1d2749/.intro%20back.jpg);
+    background-size: 1675px;
+   /* background: #008099;*/
+    min-height: 55vh;
+    padding-top: 20vh;
+    padding-bottom: 30vh;
+    font-size: 29px;
+  }
 
-}
+  #pro-pic {
+    border-radius: 50%;
+    border: 10px solid black;
+  }
+
+  #pic-locator {
+    text-align: right;
+    position: relative;
+    top: 250px;
+    color: white;
+  }
+
+  .me h1 {
+    padding: 20px;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .reach-me {
+    margin-top: 60px;    
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  
+  .work {
+    padding-top: 60px;
+    margin-top: -60px;
+  }
+  
+  .contact {
+    padding: 100px;
+    display: inline-block;
+  }
+
+  .contact img {
+    width: 100%;
+    height: 180px;
+    padding-left: 5px;
+  }
+  
+  footer {
+    padding: 20px;
+    background: #002e33;
+    color: white;
+    line-height: 40px;
+  }
+  
+  .project-pic {
+    
+  }
+  
+  #prolog {
+    min-height: 55vh;
+    padding-top: 40vh;
+    background-color: #1cd9ff;
+  }
+
+  #prolog h2{
+     font-size: 50px;
+     margin-bottom: 30px;
+     padding-top: 20px;
+     padding-bottom: 20px;
+  }
+
+  #prolog h3{
+    font-size: 30px;
+  }
+
+  .project {
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+    display: inline-block;
+    overflow: hidden;
+    height: 220px;
+    width: 280px;
+    margin: 40px 100px;
+  }
+
+  a {
+    color: black;
+  }
+  
+  @media only screen and (min-width: 200px) and (max-width: 600px) {
+    nav ul {
+      text-align: center;
+    }
+  
+    nav ul li {
+      margin: 20px;
+    }
+  
+    .project {
+      margin: 40px 0;
+    }
+    .intro {
+      font-size: 15px;
+    }
+
+    #pro-pic {
+      height: 280px;
+    }
+  }
