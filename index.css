@@ -5,44 +5,48 @@ body {
 
   #navbar {
     z-index: 1;
+    height: 80px;
   }
   
   nav ul li a {
-    color: #000;
+    color: #eee;
     text-decoration: none;
     font-size: 25px;
     font-weight: bold;
   }
   
-  nav ul li a:hover {
-    font-size: 40px;
+   li a:hover {
+    color: #ff533c;
+    transition-duration: .7s;
   }
   
   nav ul li {
     display: inline-block;
-    margin: 40px;
+    margin: 21px;
     margin-bottom: 25px;
-    margin-top: 25px;
+    margin-top: 23px;
   }
   
   nav ul {
     text-align: center;
     position: fixed;
     width: 100%;
-    background-image: linear-gradient(#0099ff, #0044ee);
-  }
-  
-  nav ul:hover {
-    background-image: linear-gradient(#ff6600, #ff4400);
+    background-color: black;
+    /*background-image: linear-gradient(#0099ff, #0044ee);*/
   }
   
   .intro {
-    background-image: url(https://raw.githubusercontent.com/Myles2/MJ-Projects/0f0d38ad93a7e59f124714af969e5732ab1d2749/.intro%20back.jpg);
-    background-size: 1675px;
+    background-image: url("https://jcdarocha.fr/wp-content/uploads/2014/08/thadeus-mokup-macbook.jpg");
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
    /* background: #008099;*/
     min-height: 55vh;
     padding-top: 20vh;
-    padding-bottom: 20vh;
+    padding-bottom: 40vh;
     font-size: 29px;
   }
 
@@ -50,18 +54,15 @@ body {
     border-radius: 50%;
     border: 10px solid black;
   }
-
-  #pic-locator {
-    text-align: right;
-    position: relative;
-    top: 230px;
-    color: white;
-  }
-
-  .me h1 {
-    padding: 20px;
-  }
   
+  #my-box {
+    margin: auto 25px;
+    border-radius: 90px;
+    min-height: 130px;
+    padding: 20px 0px 10px 0px;
+    background-color: rgba(233, 246, 255, 0.829);
+  }
+
   * {
     margin: 0;
     padding: 0;
@@ -91,20 +92,52 @@ body {
   }
   
   footer {
+    margin-top: 80px;
     padding: 20px;
-    background: #002e33;
+    background: #000000;
     color: white;
     line-height: 40px;
   }
   
+  #home-pro{
+    background-image: url("https://static.pexels.com/photos/6354/desk-laptop-working-technology.jpg");
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+    font-size: 25px;
+    min-height: 35vh;
+    padding-top: 25vh;
+    padding-bottom: 20vh;
+  }
+
   .project-pic {
-    
+    padding: 80px 20px;
+    display: inline-block;
+  }
+
+  .project-pic img {
+    height: 250px;
+    max-width: auto;
+    padding-left: 5px;
+    display: inline-block;
+  }
+
+  .project-pic h3, #home-pro h2{
+    margin: 5px 15px;
+    border-radius: 15px;
+    min-height: 15px;
+    padding: 10px 10px 10px 10px;
+    background-color: black;
+    color: white;
   }
   
   #prolog {
     min-height: 55vh;
     padding-top: 40vh;
-    background-color: #1cd9ff;
+    background-image: linear-gradient(rgb(253, 109, 90), #d6932f);
   }
 
   #prolog h2{
@@ -133,15 +166,24 @@ body {
     color: black;
   }
   
-  @media only screen and (min-width: 200px) and (max-width: 600px) {
+  @media only screen and (min-width: 200px) and (max-width: 650px) {
     nav ul {
       text-align: center;
     }
   
     nav ul li {
-      margin: 20px;
+      margin: 7px;
+      margin-top: 30px;
+    }
+
+    nav ul li a {
+      font-size: 16px;
     }
   
+    .intro {
+      font-size: 15px;
+    }
+
     .project {
       margin: 40px 0;
     }
@@ -157,25 +199,11 @@ body {
       height: auto;
     }
 
-    .intro {
-      background-size: 1150px;
-      max-width: auto;
-      height: 100%;
-      background-position: right;
-      font-size: 15px;
-      padding-bottom: 27vh;
-      color: white;
-    }
-
-    #pic-locator {
-      text-align: right;
-      position: relative;
-      top: 180px;
-    }
-
     #prolog {
       min-height: 45vh;
       padding: 20vh 0vh;
       background-color: #1cd9ff;
     }
   }
+
+  
