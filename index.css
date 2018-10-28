@@ -167,6 +167,7 @@ body {
   }
   
   @media only screen and (min-width: 200px) and (max-width: 650px) {
+    
     nav ul {
       text-align: center;
     }
@@ -188,6 +189,13 @@ body {
       margin: 40px 0;
     }
 
+    .project-pic img {
+      height: 200px;
+      max-width: auto;
+      padding-left: 5px;
+      display: inline-block;
+    }
+
     #pro-pic {
       height: 280px;
       margin-top: 40px;
@@ -197,6 +205,10 @@ body {
     .contact img {
       max-width: 160px;
       height: auto;
+    }
+
+    .contact {
+      font-size: 14px;
     }
 
     #prolog {
