@@ -166,7 +166,9 @@ body {
     color: black;
   }
   
-  @media only screen and (min-width: 200px) and (max-width: 650px) {
+  
+
+  @media only screen and (min-width: 400px) and (max-width: 650px) {
     
     nav ul {
       text-align: center;
@@ -213,9 +215,55 @@ body {
 
     #prolog {
       min-height: 45vh;
-      padding: 20vh 0vh;
-      background-color: #1cd9ff;
+      padding: 21vh 0vh;
     }
   }
 
+  @media only screen and (min-width: 100px) and (max-width: 399px) {
+    nav ul li {
+      margin: 5px;
+      margin-top: 30px;
+    }
   
+    nav ul li a {
+      font-size: 13px;
+    }
+    
+    .project-pic img {
+      height: 160px;
+      max-width: auto;
+    }
+
+    .project-pic {
+      padding: 80px 10px;
+    }
+
+    .contact {
+      font-size: 10px;
+      padding: 50px;
+    }
+
+    #pro-pic {
+      height: 250px;
+      width: auto;
+    }
+
+    .intro {
+      font-size: 13px;
+    }
+
+    #prolog h2 {
+      font-size: 40px;
+    }
+
+    #prolog {
+      min-height: 45vh;
+      padding: 30vh 0vh;
+    }
+
+    .contact img {
+      max-width: 140px;
+      height: auto;
+    }
+
+  }
