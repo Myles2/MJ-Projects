@@ -68,6 +68,52 @@ body {
     padding: 0;
   }
 
+  #about {
+    background-image: url("https://cdn.pixabay.com/photo/2016/05/10/13/50/notepad-1383797_960_720.jpg");
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+   /* background: #008099;*/
+    min-height: 55vh;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+  }
+
+  #about-me {
+    margin: auto 65px;
+    border-radius: 1px;
+    min-height: 130px;
+    padding: 20px 30px 30px 30px;
+    background-color: rgba(247, 252, 255, 0.829);
+    text-align: left;
+  }
+
+  #about-me h2{
+    padding: 20px;
+    font-size: 35px;
+  }
+
+  #about-me h3 {
+    font-size: 30px;
+    line-height: 1.3;
+    padding: 0px 30px;
+  }
+
+  #resume {
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 30px;
+
+  }
+
+  .pro-border {
+    background-color: #000;
+    font-size: 3px;
+  }
+
   .reach-me {
     margin-top: 60px;    
     margin-left: 35px;
@@ -141,7 +187,7 @@ body {
   
   #prolog {
     min-height: 55vh;
-    padding-top: 40vh;
+    padding-top: 30vh;
     background-image: linear-gradient(rgb(253, 109, 90), #d6932f);
   }
 
@@ -209,6 +255,28 @@ body {
       border: 7px solid black;
     }
 
+    #about-me {
+      margin: auto 25px;
+      padding: 30px 15px;
+    }
+
+    #about-me h3 {
+      font-size: 22px;
+      line-height: 1.2;
+      padding: 0px;
+    }
+
+    #about-me h2{
+      font-size: 30px;
+      padding: 10px 0px;
+    }
+
+    #resume {
+      font-size: 25px;
+      padding-left: 0px;
+    }
+  
+
     .contact img {
       max-width: 160px;
       height: auto;
@@ -255,6 +323,27 @@ body {
 
     .intro {
       font-size: 13px;
+    }
+
+    #about-me {
+      margin: auto 25px;
+      padding: 10px 10px;
+    }
+
+    #about-me h3 {
+      font-size: 20px;
+      line-height: 1.2;
+      padding: 0px;
+    }
+
+    #about-me h2{
+      font-size: 30px;
+      padding: 15px 0px;
+    }
+
+    #resume {
+      font-size: 20px;
+      padding: 10px 0px;
     }
 
     #prolog h2 {
