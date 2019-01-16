@@ -2,16 +2,37 @@
 <html>
   <head>
     <link href="index.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font-mfizz.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css' integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/' crossorigin='anonymous'>
     <title>Myles' Project Website</title>
     <meta name="viewport" content="width=device-width">
+    <script src="scroll.js"></script>
+    <script src="node_modules\scrolltrigger-classes\ScrollTrigger.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+        var trigger = new ScrollTrigger({
+          toggle: {
+            visible: 'visibleClass',
+            hidden: 'hiddenClass'
+          },
+          offset: {
+            x: 0,
+            y: 20
+          },
+          addHeight: true,
+          once: 
+        }, document.body, window);
+      });
+    </script>
   </head>
   <body>
     <nav>
       <ul id="navbar">
         <li><a href="#about">About me</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="#contact-tag">Contact me</a></li>
+        <li><a href="#home-pro">Projects</a></li>
+        <li><a href="#contact-foot">Contact me</a></li>
       </ul>
     </nav>
     <div id="welcome-section" class="intro">
@@ -23,27 +44,26 @@
         </div>
       </span>
     </div>
-    <div id="prolog">      
-      <h2>"Hello World!"</h2>
-      <h3> My name is Myles, I am a Virginia based Web developer</h3>
-      <h3> This is my project page were I will showcase my work</h3>
+    <div id="prolog" >
+      <div>
+        <h2 data-scroll="toggle(.fromRightIn, .fromRightOut)" class="fromRightIn">"Hello World!"</h2>
+        <div data-scroll="toggle(.fromTopIn, .fromTopOut)" class="fromTopOut">
+          <h3> My name is Myles, I am a Virginia based Web developer</h3>
+          <h3> This is my project page were I will showcase my work</h3>
+        </div>
+      </div>
     </div>
     <div id="about">
       <div id="about-me">
         <h2>About me</h2>
         <h3>I am a Web developer/software engineer and I am passionate about learning, and using technology.
           All my life I have been fascinated with electronics using them, and even taking them apart to see how they work.
-          As I got older I started taking classes on web development, computer science, and programming.
-          As of now I actively use FreeCodeCamp, Codecademy, and Harvards CS50 to keep my mind in a learning state, and have completed the FreeCodeCamp certificate in Responsive Web Development <a href="https://www.freecodecamp.org/certification/myles-jr/responsive-web-design" target="_blank"><img src="https://s3.amazonaws.com/freecodecamp/freecodecamp_logo.svg"></a>.
-          Iv'e also contributed to various open source projects in a collaborative form using Github.
+          Iv'e also contributed to various open source projects using Github.
           I hope to continue my education in computer science and the like to further my skillsets.
           <br>
           <br>
           I am also very enthusiastic about Photography, Music, and Language (Korean, Spanish). I think all these 
-          things work well with technology since it has given me a creative yet structured mindset. Music requires especially when you play an instrument (I play Cello, and Viola) a lot of practice and 
-          teamwork since most of the time more than one instrument is used at the same time not to mention learning sheet music which is almost like a language in itself.
-          Also language which I think closely relates to programming, requires a lifetime of dedication since you can never really master a language, you have to constantly use it,
-          and it is a collabrative process because langauge is meant to be spoken with others.
+          things work well with technology since it has given me a creative yet structured mindset.
           <br>
           <br>
           Overall I think these things have prepared me for the world of tech and I
@@ -55,61 +75,128 @@
     <div class="pro-border">.</div>
     <div id="home-pro">
       <h2>These are some of my projects that I have done with HTML, CSS, and JavaScript</h2>
-      <div class="project-pic">
-        <a href="chore.html" target="_blank"><img src="https://raw.githubusercontent.com/Myles2/MJ-Projects/master/Chore%20door%20img.jpg"></a>
-        <h3>Chore Door Game</h3>
+      <div id="project-back">
+        <div class="project-pic">
+          <img src="https://raw.githubusercontent.com/Myles2/MJ-Projects/master/Chore%20door%20img.jpg">
+          <div class="overlay">
+            <div class="text">
+              <h3>Chore Door Game</h3>
+              <i id="icon-fizz" class="icon-html5-alt" style="font-size:2em"></i>
+              <i id="icon-fizz" class="icon-css3" style="font-size:2em"></i>
+              <i id="icon-fizz" class="icon-javascript-alt" style="font-size:2.3em"></i>
+              <br>
+              <p> This game involves opening all the doors without finding the chore bot.</p>
+              <a href="chore.html" target="_blank"><button>View</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="project-pic">
+          <img src="https://raw.githubusercontent.com/Myles2/MJ-Projects/34f428462db115c24b941b1439702075786181ea/Message.jpg">
+          <div class="overlay">
+            <div class="text">
+              <h3>Message Mixer</h3>
+              <i id="icon-fizz" class="icon-html5-alt" style="font-size:2em"></i>
+              <i id="icon-fizz" class="icon-css3" style="font-size:2em"></i>
+              <i id="icon-fizz" class="icon-javascript-alt" style="font-size:2.3em"></i>
+              <br>
+              <p> This Webpage takes the user's text and applies different patterns to it.</p>
+              <a href="https://myles2.github.io/Message_Mixer/" target="_blank"><button>View</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="project-pic">
+          <img src="https://raw.githubusercontent.com/Myles2/MJ-Projects/master/ravenous.jpg">
+          <div class="overlay">
+            <div class="text">
+              <h3>Ravenous in React</h3>
+              <i id="icon-fizz" class="icon-html5-alt" style="font-size:2em"></i>
+              <i id="icon-fizz" class="icon-css3" style="font-size:2em"></i>
+              <i id="icon-fizz" class="icon-javascript-alt" style="font-size:2.3em"></i>
+              <i id="icon-fizz" class="icon-reactjs" style="font-size:1.9em"></i>
+              <br>
+              <p> This webpage uses the React framework and the Yelp API to display information of businesses that fit the user's parameters.</p>
+              <a href="https://myles2.github.io/Ravenous-React-/" target="_blank"><button>View</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="project-pic">
+          <img src="https://github.com/Myles2/MJ-Projects/blob/befce43878061a15402d2c5cdddf575a5a44cd2a/Survey%20img.jpg?raw=true">
+          <div class="overlay">
+            <div class="text">
+              <h3>Survey Page</h3>
+              <i id="icon-fizz" class="icon-html5-alt" style="font-size:2em"></i>
+              <i id="icon-fizz" class="icon-css3" style="font-size:2em"></i>
+              <br>
+              <p> This Webpage is a functional survey form that can be used to leave information about my portfolio page.</p>
+              <a href="survey.html" target="_blank"><button>View</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="project-pic">
+          <img src="https://raw.githubusercontent.com/Myles2/MJ-Projects/master/Tea%20cozy%20img.jpg">
+          <div class="overlay">
+            <div class="text">
+              <h3>Tea Cozy Project Webpage</h3>
+              <i id="icon-fizz" class="icon-html5-alt" style="font-size:2em"></i>
+              <i id="icon-fizz" class="icon-css3" style="font-size:2em"></i>
+              <br>
+              <p> This is a simple Webpage of a fictional business.</p>
+              <a href="tea-cozy.html" target="_blank"><button>View</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="project-pic">
+          <img src="https://github.com/Myles2/MJ-Projects/blob/befce43878061a15402d2c5cdddf575a5a44cd2a/Chris%20img.jpg?raw=true">
+          <div class="overlay">
+            <div class="text">
+              <h3>Chris Pratt Tribute Page</h3>
+              <i id="icon-fizz" class="icon-html5-alt" style="font-size:2em"></i>
+              <i id="icon-fizz" class="icon-css3" style="font-size:2em"></i>
+              <br>
+              <p> This is a Tribute page to Chris Pratt because... Why not?</p>
+              <a href="tribute.html" target="_blank"><button>View</button></a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="project-pic">
-        <a href="https://myles2.github.io/Message_Mixer/" target="_blank"><img src="https://raw.githubusercontent.com/Myles2/MJ-Projects/34f428462db115c24b941b1439702075786181ea/Message.jpg"></a>
-        <h3>Message Mixer</h3>
-      </div>
-      <div class="project-pic">
-        <a href="https://myles2.github.io/Ravenous-React-/" target="_blank"><img src="https://raw.githubusercontent.com/Myles2/MJ-Projects/master/ravenous.jpg"></a>
-        <h3>Ravenous in React</h3>
-      </div>
-      <div class="project-pic">
-        <a href="tea-cozy.html" target="_blank"><img src="https://raw.githubusercontent.com/Myles2/MJ-Projects/master/Tea%20cozy%20img.jpg"></a>
-        <h3>Tea Cozy Project Webpage</h3>
-      </div>
-      <div class="project-pic">
-        <a href="old-index.html" target="_blank"><img src="https://raw.githubusercontent.com/Myles2/MJ-Projects/19535fc32eb4afc29a23da3c30bc6c2d12a20793/old-index%20img.jpg"></a>
-        <h3>Old Portfolio</h3>
+      <div class="certs">
+        <h2>FreeCodeCamp Certification</h2>
+        <div class="project-pic" id="cert-img">
+          <img src="https://raw.githubusercontent.com/Myles2/MJ-Projects/b7c00c586d2debed1e6e274f64bac5f891f41376/FCC%20RWD%20Cert.jpg"  alt="responsive Web Design Certification" width="500px">
+          <div class="overlay-cert">
+            <div class="text">
+              <h3>Responsive Web Design</h3>
+              <i id="icon-fizz" class="icon-html5-alt" style="font-size:2em"></i>
+              <i id="icon-fizz" class="icon-css3" style="font-size:2em"></i>
+              <br>
+              <p> This is my certificate from FreeCodeCamp for Responsive Web Design</p>
+              <a href="https://www.freecodecamp.org/certification/myles-jr/responsive-web-design" target="_blank"><button>View</button></a>
+            </div>
+          </div>
+        </div> 
       </div>
     </div>
-    <div id=contact-tag>
-      <h2>Contact</h2>
-    </div>
-      <h2 class="reach-me">If you would like to speak with me, you can reach me through my email or these social media platforms.</h2>
-      <div id="contact" class="contact">
-        <a id="profile-link" class="contact-details" href="mailto:mylesbrown288@gmail.com" target="_blank"><img src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.stickpng.com%2Fassets%2Fimages%2F58485698e0bb315b0f7675a8.png&f=1" alt="Email logo"></a>
-        <h2><a id="profile-link" class="contact-details" href="mailto:mylesbrown288@gmail.com" target="_blank">Mylesbrown288@gmail.com</a></h2>
-      </div>
-      <div id="contact" class="contact">
-        <img src="https://daycreekhowl.org/wp-content/uploads/2016/02/phone.png" alt="My phone number">
-        <h2>818-471-2200</h2>
-      </div>
-      <div id="contact" class="contact">
-        <a id="profile-link" class="contact-details" href="https://www.linkedin.com/in/myles-brown-jr-5a05ba170/" target="_blank"><img src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.freepik.com%2Ffree-icon%2Flinkedin-logo_318-50643.png&f=1" alt="LinkedIn Logo"></a>
-        <h2><a id="profile-link" class="contact-details" href="https://www.linkedin.com/in/myles-brown-jr-5a05ba170/" target="_blank">LinkedIn</a></h2>
-      </div>
-      <div id="contact-tag">
-        <h2>Code platforms</h2>
-      </div>
-      <div id="contact" class="contact">
-        <a id="profile-link" class="contact-details" href="https://github.com/Myles2" target="_blank"><img src="https://image.freepik.com/free-icon/github-logo-silhouette-in-a-square_318-54633.png" alt="Github logo"></a>
-        <h2><a id="profile-link" class="contact-details" href="https://github.com/Myles2" target="_blank">Github</a></h2>
-      </div>
-      <div id="contact" class="contact">
-        <a id="profile-link" class="contact-details" href="https://codepen.io/Myles2/" target="_blank"><img src="https://maxcdn.icons8.com/Android_L/PNG/512/Logos/codepen-512.png" alt="Codepen logo"></a>
-        <h2><a id="profile-link" class="contact-details" href="https://codepen.io/Myles2/" target="_blank">Codepen</a></h2>
-      </div>
-      <div id="contact" class="contact">
-        <a id="profile-link" class="contact-details" href="https://www.freecodecamp.org/forum/u/Myles2/activity" target="_blank"><img src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.1FiBTEWjJXSDq-WMXvT5HQHaFG%26pid%3D15.1&f=1" alt="Free code camp logo"></a>
-        <h2><a id="profile-link" class="contact-details" href="https://www.freecodecamp.org/forum/u/Myles2/activity" target="_blank">Free Code Camp</a></h2>
-      </div>
     <footer>
-      <p> Courage isn't having the strength to go on it is going on when you don't have the strength.
-    ~ Napoleon Bonaparte </p>      
+      <div id="contact-foot">
+        <div id="contact" class="contact">
+          <a id="profile-link" class="contact-details" href="mailto:mylesbrown288@gmail.com" target="_blank"><i class='fas fa-envelope' style='font-size:3em'></i></a>
+        </div>
+        <div id="contact" class="contact">
+          <a id="profile-link" class="contact-details" href="https://www.linkedin.com/in/myles-brown-jr-5a05ba170/" target="_blank"><i class='fab fa-linkedin' style='font-size:3.2em'></i></a>
+        </div>
+        <div id="contact" class="contact">
+          <a id="profile-link" class="contact-details" href="https://github.com/Myles2" target="_blank"><i class="fab fa-github" style="font-size:3.3em"></i></a>
+        </div>
+        <div id="contact" class="contact">
+          <a id="profile-link" class="contact-details" href="https://codepen.io/Myles2/" target="_blank"><i class="icon-codepen" style="font-size:3em"></i></a>
+        </div>
+        <div id="contact" class="contact">
+          <a id="profile-link" class="contact-details" href="https://www.freecodecamp.org/forum/u/Myles2/activity" target="_blank"><i class="icon-freecodecamp" style="font-size:3.5em"></i></a>
+        </div>
+        <div id="textslide"><p></p></div>
+        <p>"Science is a wonderful thing if one does not have to earn one's living at it."
+            ~ Albert Einstein </p>
+      </div>        
     </footer>
   </body>
 </html>
