@@ -257,8 +257,8 @@ body {
   }
   
   #prolog {
-    min-height: 58vh;
-    padding-top: 30vh;
+    min-height: 50vh;
+    padding-top: 25vh;
     background-image: linear-gradient(rgb(253, 89, 50), #e9a136);
     overflow: hidden;
   }
@@ -275,27 +275,35 @@ body {
   }
 
   .fromTopIn {
-    transition: transform 1s ease, opacity 2s ease 3.5s;
+    -webkit-transition: transform 1s ease, opacity 2s ease 2s;
+    transition: transform 1s ease, opacity 2s ease 2s;
+    -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
     opacity: 1.0;
     
   }
 
-  .fromTopOut {
+  .fromTopOut { 
+    -webkit-transition: transform 1s ease, opacity 2s ease;
     transition: transform 1s ease, opacity 2s ease;
+    -webkit-transform: translate(0, 55px);
     transform: translate(0, 55px);
     opacity: 0.0;
   }
 
   .fromRightIn {
-    transition: transform 6s ease, opacity 1s ease 0.5s;
+    -webkit-transition: transform 3s ease, opacity 1.5s ease 0.5s;
+    transition: transform 3s ease, opacity 1.5s ease 0.5s;
+    -webkit-transform: translate(0, 0);
     transform: translate(0,0);
     opacity: 1.0;
   }
 
   .fromRightOut {
-	  transition: transform 2s ease, opacity 0.5s ease ;
-	  transform: translate(0, 0);
+    -webkit-transition: transform 2s ease, opacity 0.5s ease;
+    transition: transform 2s ease, opacity 0.5s ease;
+    -webkit-transform: translate(700px, 0);
+	  transform: translate(700px, 0);
 	  opacity: 0.0;
   }
 
