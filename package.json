@@ -53,5 +53,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "0.3.6"
+  "version": "0.3.6",
+  "dependencies": {
+    "express-validator": "^5.3.1"
+  }
 }

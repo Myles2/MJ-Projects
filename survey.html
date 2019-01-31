@@ -7,7 +7,7 @@
   <body>
     <h1 id="title">Survey Form</h1>
     <p id="description">This is a survey form for my website.</p>
-    <form id="survey-form" action="#" method="get">
+    <form id="survey-form" action="mailto:winnerkd288@gmail.com" enctype="text/plain" method="GET">
       <div>
         <div class="labels">
           <label id="name-label" for="name">* Name: </label>
@@ -21,7 +21,7 @@
           <label id="email-label" for="email">* Email: </label>
         </div>
         <div class="rightTab">
-          <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+          <input type="email" name="email" id="email" class="input-field" placeholder="Enter your Email" required>
         </div>
       </div>
       <div>
@@ -29,7 +29,7 @@
           <label id="number-label" for="age">* Age: </label>
         </div>
         <div class="rightTab">
-          <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+          <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age" required>
         </div>
       </div>
       <div>
@@ -53,54 +53,54 @@
         <div class="labels">
           <label for="scale">*How would you rate this site?</label>
         </div>
-        <div class="rightTab">
+        <div class="rightTab" >
           <ul style="list-style: none;">
-            <li class="radio"><input name="radio-buttons" value="1" type="radio" class="userRatings">Fantastic!</li>
-            <li class="radio"><input name="radio-buttons" value="2" type="radio" class="userRatings">Great!</li>
-            <li class="radio"><input name="radio-buttons" value="3" type="radio" class="userRatings">Cool</li>
-            <li class="radio"><input name="radio-buttons" value="3" type="radio" class="userRatings">OK</li>
-            <li class="radio"><input name="radio-buttons" value="3" type="radio" class="userRatings">Needs work</li>
-            <li class="radio"><input name="radio-buttons" value="3" type="radio" class="userRatings">Not good</li>
+            <li class="radio"><input name="radio" value="1" type="radio" class="userRatings" required>Fantastic!</li>
+            <li class="radio"><input name="radio" value="2" type="radio" class="userRatings">Great!</li>
+            <li class="radio"><input name="radio" value="3" type="radio" class="userRatings">Cool</li>
+            <li class="radio"><input name="radio" value="4" type="radio" class="userRatings">OK</li>
+            <li class="radio"><input name="radio" value="5" type="radio" class="userRatings">Needs work</li>
+            <li class="radio"><input name="radio" value="6" type="radio" class="userRatings">Not good</li>
           </ul>
         </div>
       </div>
       <div>
         <div class="labels">
           <label for="choices">
-          What's your favorite number?
+          What's are your favorite colors?
         </label>
         </div>
         <div class="rightTab">
           <ul id="preferences" style="list-style: none;">
             <li>
-              <input name="prefer" value="1" type="checkbox" class="userRatings">1</input>
+              <input name="prefer" value="1" type="checkbox" class="userRatings" checked>White</input>
             </li>
             <li>
-              <input name="prefer" value="2" type="checkbox" class="userRatings">2</input>
+              <input name="prefer" value="2" type="checkbox" class="userRatings">Blue</input>
             </li>
             <li>
-              <input name="prefer" value="3" type="checkbox" class="userRatings">3</input>
+              <input name="prefer" value="3" type="checkbox" class="userRatings">Red</input>
             </li>
             <li>
-              <input name="prefer" value="4" type="checkbox" class="userRatings">4</input>
+              <input name="prefer" value="4" type="checkbox" class="userRatings">Green</input>
             </li>
             <li>
-              <input name="prefer" value="5" type="checkbox" class="userRatings">5</input>
+              <input name="prefer" value="5" type="checkbox" class="userRatings">Pink</input>
             </li>
             <li>
-              <input name="prefer" value="6" type="checkbox" class="userRatings">6</input>
+              <input name="prefer" value="6" type="checkbox" class="userRatings">Purple</input>
             </li>
             <li>
-              <input name="prefer" value="7" type="checkbox" class="userRatings">7</input>
+              <input name="prefer" value="7" type="checkbox" class="userRatings">Yellow</input>
             </li>
             <li>
-              <input name="prefer" value="8" type="checkbox" class="userRatings">8</input>
+              <input name="prefer" value="8" type="checkbox" class="userRatings">Brown</input>
             </li>
             <li>
-              <input name="prefer" value="9" type="checkbox" class="userRatings">9</input>
+              <input name="prefer" value="9" type="checkbox" class="userRatings">Orange</input>
             </li>
             <li>
-              <input name="prefer" value="10" type="checkbox" class="userRatings">10</input>
+              <input name="prefer" value="10" type="checkbox" class="userRatings">Black</input>
             </li>
           </ul>
         </div>
@@ -114,6 +114,6 @@
         </div>
       </div>
       <button id="submit" type="submit">Submit</button>
-    </form>
+    </form> 
   </body>
 </html>
