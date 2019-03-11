@@ -128,11 +128,41 @@ body {
     transition-duration: .4s;
   }
 
-  .pro-border {
-    background-color: #000;
-    font-size: 3px;
+  #language-gallery {
+    display: inline-block;
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(rgb(255, 77, 32), #e9a136);
+    font-size: 24px;
+    padding: 40px 0;
+    color: #000;
+  }
+
+  #languages {
+    margin: 30px 0 10px 0 0;
+    padding: 20px 0;
+  }
+
+  #languages i {
+    margin-top: 60px;
+    margin-left: 800px;
+    opacity: 0;
+    animation: fader 3s infinite;
+  }
+
+  @keyframes fader {
+    0% {margin-left: 1000px; opacity: 0;}
+    10% {opacity: 0.01;}
+    40% {margin-left: 20px; opacity: 1;}
+    60% {margin-left: 20px; opacity: 1;}
+    90% {opacity: 0.01;}
+    100% {margin-left: -1000px; opacity: 0;}
   }
   
+  hr {
+    border: 2px solid black;
+  }
+
   #home-pro{
     font-size: 25px;
     min-height: 35vh;
@@ -272,7 +302,7 @@ body {
   #prolog {
     min-height: 50vh;
     padding-top: 25vh;
-    background-image: linear-gradient(rgb(253, 89, 50), #e9a136);
+    background-image: linear-gradient(rgb(255, 77, 32), #e9a136);
     overflow: hidden;
   }
 
