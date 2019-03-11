@@ -125,6 +125,7 @@ body {
   #about-me button:hover {
     background-color: rgb(255, 250, 250);
     color: black;
+    -webkit-transition-duration: .4s;
     transition-duration: .4s;
   }
 
@@ -136,11 +137,6 @@ body {
     font-size: 24px;
     padding: 40px 0;
     color: #000;
-  }
-
-  #languages {
-    margin: 30px 0 10px 0;
-    padding: 20px 0;
   }
 
   #languages i {
