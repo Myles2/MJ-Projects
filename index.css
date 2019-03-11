@@ -449,6 +449,17 @@ body {
     line-height: 20px;
   }
 
+  @media only screen and (min-width: 650px) and (max-width: 1200px) {
+    @keyframes fader {
+      0% {margin-left: 400px; opacity: 0;}
+      10% {opacity: 0.01;}
+      40% {margin-left: 20px; opacity: 1;}
+      60% {margin-left: 20px; opacity: 1;}
+      90% {opacity: 0.01;}
+      100% {margin-left: -400px; opacity: 0;}
+    }
+  }
+
   @media only screen and (min-width: 400px) and (max-width: 650px) {
     nav ul {
       text-align: center;
@@ -511,6 +522,15 @@ body {
       font-size: 25px;
       margin-left: 20px;
       padding: 5px 15px;
+    }
+
+    @keyframes fader {
+      0% {margin-left: 300px; opacity: 0;}
+      10% {opacity: 0.01;}
+      40% {margin-left: 20px; opacity: 1;}
+      60% {margin-left: 20px; opacity: 1;}
+      90% {opacity: 0.01;}
+      100% {margin-left: -300px; opacity: 0;}
     }
 
     .contact img {
@@ -613,6 +633,15 @@ body {
       font-size: 20px;
       margin-left: 0px;
       padding: 5px 10px;
+    }
+
+    @keyframes fader {
+      0% {margin-left: 200px; opacity: 0;}
+      10% {opacity: 0.01;}
+      40% {margin-left: 20px; opacity: 1;}
+      60% {margin-left: 20px; opacity: 1;}
+      90% {opacity: 0.01;}
+      100% {margin-left: -200px; opacity: 0;}
     }
 
     #project-back {
