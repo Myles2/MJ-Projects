@@ -185,6 +185,8 @@
   font-smoothing: antialiased;
 }
 
+[data-icon]:before, .icon-reactjs:before {display: inline;}
+
 .icon-3dprint:before { content: "\f100"; }
 .icon-alpinelinux:before { content: "\f101"; }
 .icon-angular:before { content: "\f102"; }
