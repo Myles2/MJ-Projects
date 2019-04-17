@@ -1,7 +1,7 @@
 const spot = document.getElementById("spot");
 const spotName = document.getElementById("spotName");
-const skills = ["icon-html5-alt", "icon-css3-alt", "icon-javascript-alt", "icon-jquery", "icon-sass", "icon-reactjs", "icon-git"]
-const skillName = ["HTML5", "CSS3", "JavaScript", "jQuery", "Sass", "React.js", "Git"]
+const skills = ["icon-html5-alt", "icon-css3-alt", "icon-javascript-alt", "icon-jquery", "icon-sass", "icon-reactjs", "icon-git", "icon-cplusplus", "icon-python"]
+const skillName = ["HTML5", "CSS3", "JavaScript", "jQuery", "Sass", "React.js", "Git", "C++", "Python"]
 let count = 0;
 
 spot.className = skills[count]
