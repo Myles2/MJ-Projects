@@ -36,7 +36,7 @@ body {
   }
   
   .intro {
-    background-image: url("https://jcdarocha.fr/wp-content/uploads/2014/08/thadeus-mokup-macbook.jpg");
+    background-image: url("macbook.jpg");
     background-repeat:no-repeat;
     -webkit-background-size:cover;
     -moz-background-size:cover;
@@ -72,7 +72,7 @@ body {
   }
 
   #about {
-    background-image: url("https://images.pexels.com/photos/908298/pexels-photo-908298.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-image: url("work_table.jpg");
     background-repeat:no-repeat;
     -webkit-background-size:cover;
     -moz-background-size:cover;
