@@ -145,7 +145,7 @@ body {
     margin-left: 800px;
     opacity: 0;
     animation: fader 3s infinite;
-    color: rgb(212, 212, 212);
+    color: rgb(0, 0, 0);
   }
 
   @keyframes fader {
